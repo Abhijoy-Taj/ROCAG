@@ -1,0 +1,75 @@
+<script>
+    var password = "trac5204"
+
+function passcheck() {
+    if(document.getElementById("pass1").value != password) {
+        alert("Wrong Password, Try Again.");
+        return false;
+    }
+
+    if(document.getElementById("pass1").value == password) {
+        alert("Correct Password!");
+    }
+}
+</script>
+<html>
+    <head>
+        <title>ROYAL OUTER CLASS ACCESS GRANTER</title>
+    </head>
+    <body> 
+        <section class="backdrop">
+            <form class="passform" action="webpage.html" onsubmit="return passcheck()">
+                <img class="imag" src="Guard.png">
+                <input class="box" type="password" required id="pass1">
+                <input class="submit" type="submit">
+            </form>
+        </section>
+    </body>
+</html>
+<style>
+    .backdrop{
+    background: linear-gradient(180deg, rgba(0,5,255,1) 15%, rgba(0,107,244,1) 36%, rgba(0,148,234,1) 55%, rgba(0,255,192,1) 85%);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    }
+    .passform{
+    position: absolute;
+    top: 40%;
+    left: 39%;
+    }
+    .submit{
+    position: absolute;
+    top: 125%;
+    left: 8%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    background-color: yellow;
+    border-radius: 30px;
+    border-width: 3px;
+    border-style: double;
+    border-color: rgb(0, 0, 0);
+    width: 200px;
+    height: 40px;
+    box-shadow: 0 0 5px yellow,
+    0 0 25px yellow;
+    }
+    .submit:hover{
+    box-shadow: 0 0 5px yellow,
+    0 0 25px yellow, 0 0 50px yellow,
+    0 0 100px yellow, 0 0 200px yellow ;
+    }
+    .box{
+    position: absolute;
+    right: 3%;
+    border-radius: 30px;
+    margin-top: 255px;
+    border-width: 5px;
+    border-style: double;
+    padding: 6px;
+    font-size: large;
+    }
+    .imag{
+    width: 250px;
+    }
+</style>
