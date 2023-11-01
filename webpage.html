@@ -7,6 +7,15 @@
       <section class="banner">
         <section class="ribben">
           <p1 class="name">ACCESS GRANTER</p1>
+          <dev class="container">
+            <form>
+              <input type="text" id="name" name="your-name" placeholder="Name">
+              <br>
+              <input type="text" id="reason" name="reason" placeholder="Reason">
+              <br>
+              <input type="submit" value="Apply" id="submit">
+            </form>
+          </dev>
         </section>
         <p1 class="heading">ROCAG</p1>
       </section>
@@ -50,4 +59,46 @@
     margin-left: 59%;
     font-size: 45px;
   }
+  .container{
+    position: absolute;
+    top: 410px;
+    left: 40%;
+  }
+  #submit{
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    background-color: blueviolet;
+    margin-top: 8px;
+    border-radius: 30px;
+    border-width: 3px;
+    border-style: double;
+    border-color: rgb(0, 0, 0);
+    width: 200px;
+    height: 40px;
+    box-shadow: 0 0 5px blueviolet,
+    0 0 25px blueviolet;
+  }
+  #name{
+    border-radius: 30px;
+    border-width: 5px;
+    border-style: double;
+    padding: 6px;
+    font-size: large;
+  }
+  #reason{
+    border-radius: 30px;
+    border-width: 5px;
+    margin-top: 5px;
+    border-style: double;
+    padding: 6px;
+    font-size: large;
+  }
+  #submit:hover{
+    box-shadow: 0 0 5px yellow,
+    0 0 25px rgb(21, 255, 0), 0 0 50px rgb(255, 0, 0),
+    0 0 100px rgb(89, 0, 255), 0 0 200px rgb(255, 0, 0) ;
+    }
   </style>
